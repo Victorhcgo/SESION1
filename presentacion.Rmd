@@ -1,9 +1,9 @@
 ---
-output:
-  html_document: 
-    number_sections: yes
-    toc: yes
-  pdf_document: default
+output: ioslides_presentation
+  #html_document: 
+    #number_sections: yes
+    #toc: yes
+  #pdf_document: default
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -240,6 +240,7 @@ En su forma más simple, R puede ser utilizado como una calculadora:
 </center>
 
 
+##
 ```{r operaciones aritmeticas, eval=FALSE}
 #-----------------------
 # Operaciones básicas  #
@@ -256,9 +257,10 @@ En su forma más simple, R puede ser utilizado como una calculadora:
 ```
 
 
+##
 También se pueden realizar las operaciones aritmeéticas con vectores.
 
-```{r operaciones con vectores, eval=FALSE}
+```{r operaciones con vectores}
 #----------------------------
 # Operaciones con vectores  #
 #----------------------------
@@ -276,9 +278,10 @@ a%/%b # 0 0 0
 ```
 
 
+##
 Así mismo se pueden realizar las operaciones aritmeéticas con matrices.
 
-```{r operaciones con matrices, eval=FALSE}
+```{r operaciones con matrices}
 #----------------------------
 # Operaciones con matrices  #
 #----------------------------
@@ -321,11 +324,14 @@ Se utilizan para expecificar multiples condiciones, donde R devuelve un _TRUE_ o
 |:--------------:|:---------:|
 |&| Comparación lógica AND elemento a elemento|
 |&&| Comparación lógica AND de vectores|
-||| Comparación lógica OR elemento a elemento|
-|||| Comparación lógica OR de vectores|
+|l| Comparación lógica OR elemento a elemento|
+|ll| Comparación lógica OR de vectores|
 |!| Negación lógica NOT|
 |xor| Exclusión OR elemento a elemento\n equivalente a !(x|y)|
 </center>
+
+
+##
 
 ```{r operadores logicos, echo=FALSE}
 50 & 5 > 10    # FALSE
@@ -367,7 +373,8 @@ Estos operadores permiten comparar objetos, donde R devuelve un valor booleano _
 </center>
 
 
-```{r, eval=FALSE}
+##
+```{r include=FALSE}
 #------------------------------------
 # Operaciones básicas de comparación
 #------------------------------------
@@ -380,7 +387,7 @@ Estos operadores permiten comparar objetos, donde R devuelve un valor booleano _
 4 != 5 # TRUE
 ```
 
-```{r, eval=FALSE}
+```{r}
 #-----------------------------------------
 # Operaciones de comparación con vectores
 #-----------------------------------------
