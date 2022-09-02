@@ -241,7 +241,7 @@ En su forma más simple, R puede ser utilizado como una calculadora:
 
 
 ##
-```{r operaciones aritmeticas, eval=FALSE}
+```{r operaciones aritmeticas, eval=FALSE, include=FALSE}
 #-----------------------
 # Operaciones básicas  #
 #-----------------------
@@ -260,7 +260,7 @@ En su forma más simple, R puede ser utilizado como una calculadora:
 ##
 También se pueden realizar las operaciones aritmeéticas con vectores.
 
-```{r operaciones con vectores}
+```{r operaciones con vectores, eval=FALSE, include=FALSE}
 #----------------------------
 # Operaciones con vectores  #
 #----------------------------
@@ -281,7 +281,7 @@ a%/%b # 0 0 0
 ##
 Así mismo se pueden realizar las operaciones aritmeéticas con matrices.
 
-```{r operaciones con matrices}
+```{r operaciones con matrices, eval=FALSE, include=FALSE}
 #----------------------------
 # Operaciones con matrices  #
 #----------------------------
@@ -333,7 +333,7 @@ Se utilizan para expecificar multiples condiciones, donde R devuelve un _TRUE_ o
 
 ##
 
-```{r operadores logicos, echo=FALSE}
+```{r operadores logicos, eval=FALSE, include=FALSE}
 50 & 5 > 10    # FALSE
 50 | 5 > 10    # TRUE
 
@@ -374,7 +374,7 @@ Estos operadores permiten comparar objetos, donde R devuelve un valor booleano _
 
 
 ##
-```{r include=FALSE}
+```{r eval=FALSE, include=FALSE}
 #------------------------------------
 # Operaciones básicas de comparación
 #------------------------------------
@@ -387,7 +387,7 @@ Estos operadores permiten comparar objetos, donde R devuelve un valor booleano _
 4 != 5 # TRUE
 ```
 
-```{r}
+```{r echo=TRUE}
 #-----------------------------------------
 # Operaciones de comparación con vectores
 #-----------------------------------------
